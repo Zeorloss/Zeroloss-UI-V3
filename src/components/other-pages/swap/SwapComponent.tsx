@@ -24,7 +24,7 @@ import ZButton from "@/components/ui/z-button";
 import { ChevronDown, Copy } from "lucide-react";
 
 export default function SwapComponent() {
-  const [tokens, setTokens] = useState({ from: "BNB", to: "KRL" }); // Track selected tokens
+  const [tokens, setTokens] = useState({ from: "BNB", to: "ZLT" }); // Track selected tokens
   const [amounts, setAmounts] = useState({ from: "", to: "" }); // Track input values
   const [isModalOpen, setIsModalOpen] = useState(false); // Control modal visibility
   const [modalFor, setModalFor] = useState(""); // Track which token selector is clicked
@@ -33,7 +33,7 @@ export default function SwapComponent() {
   // Dummy token data
   const dummyTokens = [
     { name: "BNB", icon: "🔸" },
-    { name: "ZLT", icon: "🛡️" },
+    { name: "KRL", icon: "🛡️" },
     { name: "ETH", icon: "💎" },
     { name: "USDT", icon: "💵" },
     { name: "BTC", icon: "⚡" },
