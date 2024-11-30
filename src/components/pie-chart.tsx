@@ -21,18 +21,18 @@ export default function ResponsivePieChart() {
   }, []);
 
   const legendItems = [
-    { label: "Zeroloss Ecosystem", value: 50, color: "#e91e63" },
-    { label: "Early Access", value: 11.72, color: "#4caf50" },
-    { label: "Development", value: 9, color: "#ff9800" },
-    { label: "Marketing", value: 10.28, color: "#ff0000" },
-    { label: "Team", value: 8, color: "#2196f3" },
-    { label: "Treasury", value: 11, color: "#f50047" },
+    { label: "Zeroloss Ecosystem", value: 50, color: "#CF1BD2" },
+    { label: "Treasury", value: 11, color: "#FF00E5" },
+    { label: "Team", value: 8, color: "#547EEA" },
+    { label: "Marketing", value: 10.28, color: "#F12F2F" },
+    { label: "Development", value: 9, color: "#FFB800" },
+    { label: "Early Access", value: 11.72, color: "#0CCF37" },
   ];
 
   return (
     <div className="flex flex-col lg:flex-row lg:items-start lg:gap-10 bg-white dark:bg-black">
       {/* Pie Chart */}
-      <div className="flex justify-center">
+      <div className="flex justify-center lg:justify-start items-center ml-20 lg:ml-0">
         <PChart
           series={[
             {
