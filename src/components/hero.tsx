@@ -8,7 +8,7 @@ import Typewriter from "typewriter-effect";
 
 export default function Hero() {
   return (
-    <section className="w-full flex justify-between items-center lg:min-h-screen py-20 lg:py-0 gap-10 lg:px-20 md:px-10 px-5">
+    <section className="w-full flex flex-col-reverse lg:flex-row lg:justify-between items-center lg:min-h-screen py-20 lg:py-0 gap-10 lg:px-20 md:px-10 px-5">
       {/* ////// Writeup */}
       <div className="w-full lg:w-[50%] flex flex-col gap-5 text-center lg:text-left">
         <div className=" font-extrabold text-3xl md:text-5xl lg:text-left text-center">
@@ -48,7 +48,7 @@ export default function Hero() {
       </div>
 
       {/* ////// Picture */}
-      <div className="w-full lg:w-[50%] lg:flex justify-end hidden">
+      <div className="w-full lg:w-[50%] lg:flex lg:justify-end justify-center">
         <Image
           src={"/HeroImages.png"}
           alt={"Hero illustration showcasing ZeroVerse and ZLT"}

@@ -1,6 +1,7 @@
 import React from "react";
 import SwapChart from "./SwapChart";
 import SwapComponent from "./SwapComponent";
+import SwapWidget from "./SwapWidget";
 
 export default function SwapHero() {
   return (
@@ -14,7 +15,8 @@ export default function SwapHero() {
 
         {/* Swap Component */}
         <div className="w-full lg:w-[40%]">
-          <SwapComponent />
+          {/* <SwapComponent /> */}
+          <SwapWidget />
         </div>
       </section>
     </section>
