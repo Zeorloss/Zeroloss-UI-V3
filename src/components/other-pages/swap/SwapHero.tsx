@@ -14,7 +14,7 @@ export default function SwapHero() {
         </div>
 
         {/* Swap Component */}
-        <div className="w-full lg:w-[40%]">
+        <div className="w-full lg:w-[40%] bg-white text-black">
           {/* <SwapComponent /> */}
           <SwapWidget />
         </div>
