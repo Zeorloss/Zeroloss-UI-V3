@@ -72,3 +72,30 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  #kryptolite-swap-widget {
+    @apply bg-white dark:bg-zeroDarkAlt text-black dark:text-white;
+  }
+
+  /* #kryptolite-swap-widget button:last-child {
+    @apply !bg-zeroPrimary !text-white px-4 py-2 rounded-md font-medium inline-block !important;
+  }
+  #kryptolite-swap-widget button:first-child {
+    @apply !bg-zeroPrimary !text-white px-4 py-2 rounded-md font-medium inline-block !important;
+  } */
+
+  #swap-page {
+    @apply bg-white dark:bg-zeroDarkAlt;
+  }
+
+  .custom_currency_search_modal {
+    @apply !bg-white !dark:bg-zeroDarkAlt !text-black !dark:text-white;
+  }
+}
+
+/* Targeting the div with the specific id */
+div[id="headlessui-dialog-panel-:rh:"] {
+  /* Your custom styles here */
+  background-color: red; /* Example */
+}
