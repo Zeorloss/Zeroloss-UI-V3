@@ -78,12 +78,12 @@ body {
     @apply bg-white dark:bg-zeroDarkAlt text-black dark:text-white;
   }
 
-  /* #kryptolite-swap-widget button:last-child {
+  #kryptolite-swap-widget button:last-child {
     @apply !bg-zeroPrimary !text-white px-4 py-2 rounded-md font-medium inline-block !important;
   }
   #kryptolite-swap-widget button:first-child {
     @apply !bg-zeroPrimary !text-white px-4 py-2 rounded-md font-medium inline-block !important;
-  } */
+  }
 
   #swap-page {
     @apply bg-white dark:bg-zeroDarkAlt;
