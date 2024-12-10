@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "@rainbow-me/rainbowkit/styles.css";
 import { ThemeProvider } from "@/components/theme-provider";
-39;
 import { Poppins } from "next/font/google";
-import TanstackQueryProvider from "@/components/tanstack-query";
+import { Providers } from "./providers";
 
 const BASE_URL = "https://decentroneum.com";
 
@@ -22,7 +22,6 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  manifest: "https://zeroloss/site.webmanifest",
   category: "Web 3",
   description: "Zeroloss",
   keywords: ["Web3", "Blockchain"],
@@ -78,7 +77,7 @@ export default function RootLayout({
           enableSystem={true}
           disableTransitionOnChange
         >
-          <TanstackQueryProvider>{children}</TanstackQueryProvider>
+          <Providers>{children}</Providers>
         </ThemeProvider>
       </body>
     </html>

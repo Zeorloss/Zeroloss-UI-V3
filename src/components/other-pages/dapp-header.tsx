@@ -5,7 +5,7 @@ import Link from "next/link";
 import React from "react";
 import { ThemeToggle } from "../theme-toggler";
 import MobileMenu from "../mobile-menu";
-import ZButton from "../ui/z-button";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 export const navLinks = [
   {
@@ -65,11 +65,7 @@ export default function DappHeader() {
         </div>
 
         <div className="hidden lg:flex">
-          <ZButton
-            btntext={"Connect Wallet"}
-            thereIsIcon={false}
-            onClick={() => {}}
-          />
+          <ConnectButton />
         </div>
       </div>
     </header>
